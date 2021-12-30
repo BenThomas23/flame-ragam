@@ -32,6 +32,8 @@ $("#form").on("submit", (e) => {
       $('body').removeClass('modal-active');
       submitToServer()
 
+      closeModal()
+
 })
 
 async function submitToServer() {

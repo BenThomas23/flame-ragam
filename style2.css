@@ -25,26 +25,29 @@
   text-align: center;
   background: -webkit-linear-gradient(
     45deg,
-    #ff7300,
-    #ffd000
+    #dbdbdb,
+    #ececec
   );
   background: -o-linear-gradient(
     45deg,
-    #ff7300,
-    #ffd000
+    #dbdbdb,
+    #ececec
   );
   background: linear-gradient(
     45deg,
-    #ff7300,
-    #ffd000
+    #dbdbdb,
+    #ececec
   );
-  color: #fff;
+  color: rgb(0, 0, 0);
   line-height: 50px;
   border-radius: 50% 50%;
-  border: 5px solid #ff7300;
+  border: 5px solid #c0bcbc;
   /* opacity: 0.3; */
   opacity: 1;
   transition: all 0.4s;
+}
+#icon{
+  transform: scale(1.5);
 }
 
 #modal-container {
@@ -105,10 +108,11 @@
   .modal-background
   .modal {
   max-width: 600px;
-  background: black;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
   padding: 100px;
   display: inline-block;
-  border-radius: 3px;
+  border-radius: 15px;
   font-weight: 300;
   position: relative;
   /* left: 50%; */
@@ -122,22 +126,17 @@
   padding: 0;
   border-radius: 50%;
   transform: scale(1.3);
+  background: rgba(255, 255, 255, 0.199);
 }
 #closeBtn i {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(
-    177,
-    164,
-    164,
-    0.562
-  );
   font-size: x-large;
   border-radius: 50%;
   height: 40px;
   width: 40px;
-  color: #000;
+  color: rgb(255, 255, 255);
 }
 .modal-heading {
   position: absolute;
@@ -250,7 +249,7 @@
   }
 }
 .Name {
-  --activeTitleColor: grey;
+  --activeTitleColor: rgb(219, 211, 211);
   --bg: black;
   --text: white;
 }
@@ -305,7 +304,7 @@ input[type="number"]::-webkit-outer-spin-button {
   bottom: 15px;
   left: 0px;
   transition: all 0.3s ease;
-  color: lightgray;
+  color: rgb(238, 235, 235);
 }
 .Name
   input:focus
@@ -395,7 +394,7 @@ input[type="number"]::-webkit-outer-spin-button {
   -moz-appearance: none;
   appearance: none;
   background-color: transparent;
-  border: 2px solid #ff7300;
+  border: 2px solid #dbdbdb;
   border-radius: 0.6em;
   color: white;
   cursor: pointer;
@@ -414,10 +413,10 @@ input[type="number"]::-webkit-outer-spin-button {
   outline: 0;
 }
 .fourth {
-  border-color: #ff7300;
+  border-color: #dbdbdb;
   background-image: linear-gradient(
     45deg,
-    #ff7300 50%,
+    #dbdbdb 50%,
     transparent 50%
   );
   background-position: 100%;
@@ -427,6 +426,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .fourth:hover {
   background-position: 0;
+  color: black;
 }
 
 .third {
